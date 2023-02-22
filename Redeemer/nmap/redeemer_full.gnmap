@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Thu Feb  2 00:35:34 2023 as: nmap -p 6379 -oA nmap/redeemer_full -v 10.129.28.149
+# Ports scanned: TCP(1;6379) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.28.149 ()	Status: Up
+Host: 10.129.28.149 ()	Ports: 6379/open/tcp//redis///
+# Nmap done at Thu Feb  2 00:35:34 2023 -- 1 IP address (1 host up) scanned in 0.40 seconds

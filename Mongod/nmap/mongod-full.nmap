@@ -1,0 +1,9 @@
+# Nmap 7.93 scan initiated Fri Feb  3 02:31:59 2023 as: nmap -v -p 27017 -oA nmap/mongod-full 10.129.228.30
+Nmap scan report for 10.129.228.30
+Host is up (0.79s latency).
+
+PORT      STATE SERVICE
+27017/tcp open  mongod
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Feb  3 02:32:00 2023 -- 1 IP address (1 host up) scanned in 1.19 seconds

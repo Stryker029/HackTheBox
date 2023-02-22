@@ -1,0 +1,17 @@
+# Nmap 7.93 scan initiated Fri Feb  3 02:28:39 2023 as: nmap -sV -sC -v -oA nmap/mongod 10.129.228.30
+Increasing send delay for 10.129.228.30 from 10 to 20 due to 19 out of 61 dropped probes since last increase.
+Increasing send delay for 10.129.228.30 from 40 to 80 due to 48 out of 158 dropped probes since last increase.
+Nmap scan report for 10.129.228.30
+Host is up (0.32s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 48add5b83a9fbcbef7e8201ef6bfdeae (RSA)
+|   256 b7896c0b20ed49b2c1867c2992741c1f (ECDSA)
+|_  256 18cd9d08a621a8b8b6f79f8d405154fb (ED25519)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb  3 02:29:53 2023 -- 1 IP address (1 host up) scanned in 74.10 seconds

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri Feb  3 02:31:59 2023 as: nmap -v -p 27017 -oA nmap/mongod-full 10.129.228.30 -->
+<nmaprun scanner="nmap" args="nmap -v -p 27017 -oA nmap/mongod-full 10.129.228.30" start="1675369919" startstr="Fri Feb  3 02:31:59 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="27017"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1675369919"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.228.30" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1675369920" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1675369920"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1675369920"/>
+<taskbegin task="Connect Scan" time="1675369920"/>
+<taskend task="Connect Scan" time="1675369920" extrainfo="1 total ports"/>
+<host starttime="1675369920" endtime="1675369920"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.129.228.30" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="27017"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mongod" method="table" conf="3"/></port>
+</ports>
+<times srtt="788989" rttvar="820139" to="4069545"/>
+</host>
+<runstats><finished time="1675369920" timestr="Fri Feb  3 02:32:00 2023" summary="Nmap done at Fri Feb  3 02:32:00 2023; 1 IP address (1 host up) scanned in 1.19 seconds" elapsed="1.19" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

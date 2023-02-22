@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Fri Feb  3 02:31:59 2023 as: nmap -v -p 27017 -oA nmap/mongod-full 10.129.228.30
+# Ports scanned: TCP(1;27017) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.228.30 ()	Status: Up
+Host: 10.129.228.30 ()	Ports: 27017/open/tcp//mongod///
+# Nmap done at Fri Feb  3 02:32:00 2023 -- 1 IP address (1 host up) scanned in 1.19 seconds
