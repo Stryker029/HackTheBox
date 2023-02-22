@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Fri Feb  3 01:55:09 2023 as: nmap -sC -sV -oA nmap/explosion -v -p 3389 10.129.26.44
+# Ports scanned: TCP(1;3389) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.26.44 ()	Status: Up
+Host: 10.129.26.44 ()	Ports: 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/
+# Nmap done at Fri Feb  3 01:55:22 2023 -- 1 IP address (1 host up) scanned in 12.64 seconds

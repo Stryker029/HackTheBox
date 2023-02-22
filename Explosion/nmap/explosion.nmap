@@ -1,0 +1,32 @@
+# Nmap 7.93 scan initiated Fri Feb  3 01:55:09 2023 as: nmap -sC -sV -oA nmap/explosion -v -p 3389 10.129.26.44
+Nmap scan report for 10.129.26.44
+Host is up (0.15s latency).
+
+PORT     STATE SERVICE       VERSION
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: EXPLOSION
+|   NetBIOS_Domain_Name: EXPLOSION
+|   NetBIOS_Computer_Name: EXPLOSION
+|   DNS_Domain_Name: Explosion
+|   DNS_Computer_Name: Explosion
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-02-02T19:53:21+00:00
+| ssl-cert: Subject: commonName=Explosion
+| Issuer: commonName=Explosion
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-02-01T19:50:17
+| Not valid after:  2023-08-03T19:50:17
+| MD5:   9fafa405825b1959949e6139ef69bada
+|_SHA-1: 22f08c378d7c7b04ba78881312977cbe3dfe8e1e
+|_ssl-date: 2023-02-02T19:53:21+00:00; -2m00s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1m59s, deviation: 0s, median: -2m00s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb  3 01:55:22 2023 -- 1 IP address (1 host up) scanned in 12.64 seconds

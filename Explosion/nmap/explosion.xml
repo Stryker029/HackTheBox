@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri Feb  3 01:55:09 2023 as: nmap -sC -sV -oA nmap/explosion -v -p 3389 10.129.26.44 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -oA nmap/explosion -v -p 3389 10.129.26.44" start="1675367709" startstr="Fri Feb  3 01:55:09 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="3389"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1675367710"/>
+<taskend task="NSE" time="1675367710"/>
+<taskbegin task="NSE" time="1675367710"/>
+<taskend task="NSE" time="1675367710"/>
+<taskbegin task="NSE" time="1675367710"/>
+<taskend task="NSE" time="1675367710"/>
+<taskbegin task="Ping Scan" time="1675367710"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.26.44" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1675367710" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1675367710"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1675367710"/>
+<taskbegin task="Connect Scan" time="1675367710"/>
+<taskend task="Connect Scan" time="1675367710" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1675367711"/>
+<taskend task="Service scan" time="1675367718" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1675367718"/>
+<taskend task="NSE" time="1675367720"/>
+<taskbegin task="NSE" time="1675367720"/>
+<taskend task="NSE" time="1675367722"/>
+<taskbegin task="NSE" time="1675367722"/>
+<taskend task="NSE" time="1675367722"/>
+<host starttime="1675367710" endtime="1675367722"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.129.26.44" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: EXPLOSION&#xa;  NetBIOS_Domain_Name: EXPLOSION&#xa;  NetBIOS_Computer_Name: EXPLOSION&#xa;  DNS_Domain_Name: Explosion&#xa;  DNS_Computer_Name: Explosion&#xa;  Product_Version: 10.0.17763&#xa;  System_Time: 2023-02-02T19:53:21+00:00"><elem key="Target_Name">EXPLOSION</elem>
+<elem key="NetBIOS_Domain_Name">EXPLOSION</elem>
+<elem key="NetBIOS_Computer_Name">EXPLOSION</elem>
+<elem key="DNS_Domain_Name">Explosion</elem>
+<elem key="DNS_Computer_Name">Explosion</elem>
+<elem key="Product_Version">10.0.17763</elem>
+<elem key="System_Time">2023-02-02T19:53:21+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=Explosion&#xa;Issuer: commonName=Explosion&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-02-01T19:50:17&#xa;Not valid after:  2023-08-03T19:50:17&#xa;MD5:   9fafa405825b1959949e6139ef69bada&#xa;SHA-1: 22f08c378d7c7b04ba78881312977cbe3dfe8e1e"><table key="subject">
+<elem key="commonName">Explosion</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Explosion</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">FAE0F85E64DD989FC974CA7910EC5B1BAB289AC7E7DE7956D34AB8095EE4583A89D62DDEFE054A59BC6F40241152DAC809E396DE93AB1C3645FC2F08A7D7FC1892D76916DB66BA9327B8F40C0E2C4FBE9DE2CE81B38608E49AB9BBB4DA57ACE1A78956E01916E5633F7074D96E8DBDD2D9FD5F2A711C40609A09469590FC6766DF7E8B074126EB5EF047EA2FC58E7F2293C108A2FE3D3C1FAFFE79DA81CD74A5F9FD87B29A557C9748B1279CC8D1ABF7761F4DBE351861BB5F066BEEE4B3681A9DBB792786FB8F493DFF5D4A0D4F222F6B6669C72DDA0772F581516B5C0F705D1093BDDDEE4239BE289A59B0FB719F083574A0CFFE4CA7936D5CD4D8410670F1</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-02-01T19:50:17</elem>
+<elem key="notAfter">2023-08-03T19:50:17</elem>
+</table>
+<elem key="md5">9fafa405825b1959949e6139ef69bada</elem>
+<elem key="sha1">22f08c378d7c7b04ba78881312977cbe3dfe8e1e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC1jCCAb6gAwIBAgIQaskNwfUZy7NIr61FfhJPyzANBgkqhkiG9w0BAQsFADAU&#xa;MRIwEAYDVQQDEwlFeHBsb3Npb24wHhcNMjMwMjAxMTk1MDE3WhcNMjMwODAzMTk1&#xa;MDE3WjAUMRIwEAYDVQQDEwlFeHBsb3Npb24wggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQD64PheZN2Yn8l0ynkQ7Fsbqyiax+feeVbTSrgJXuRYOonWLd7+&#xa;BUpZvG9AJBFS2sgJ45bek6scNkX8Lwin1/wYktdpFttmupMnuPQMDixPvp3izoGz&#xa;hgjkmrm7tNpXrOGniVbgGRblYz9wdNlujb3S2f1fKnEcQGCaCUaVkPxnZt9+iwdB&#xa;Jute8EfqL8WOfyKTwQii/j08H6/+edqBzXSl+f2HsppVfJdIsSecyNGr93YfTb41&#xa;GGG7XwZr7uSzaBqdu3knhvuPST3/XUoNTyIva2Zpxy3aB3L1gVFrXA9wXRCTvd3u&#xa;Qjm+KJpZsPtxnwg1dKDP/kynk21c1NhBBnDxAgMBAAGjJDAiMBMGA1UdJQQMMAoG&#xa;CCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAs4mlgjQU&#xa;lYZodCThI+MfVZ9Vajl02DkgXGyPTCxI4L6GMbl8OBG8BeTvPfXqktXW69UJ9Ljt&#xa;Hj2RqmHo9FQTZ7DL2zAZTD0ndNFjJ2jBkxFB3b9I1mJSZwPH0k7Q9zgcpC4It6p1&#xa;pqThcRjW5RQfGBEYZQvGMwHERr8je1A2Qu0lymtRfUQjOBprFLTPmi17bfjM/paA&#xa;94AyxArBt5xYQfwNTPOMtN7r3NjLx6fjqBNV5FnjM7o7y2Vl9J1JpUdBewzWQTQI&#xa;fSikYj8ToBncrFIKOJq1xNbhrcajQQIlHsYy8Rd9NW0h+Fct0+fBMVH7zXIckqhI&#xa;saUWCvGPHIULhQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2023-02-02T19:53:21+00:00; -2m00s from scanner time."><elem key="delta">-120.0</elem>
+<elem key="date">2023-02-02T19:53:21+00:00</elem>
+</script></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -1m59s, deviation: 0s, median: -2m00s"><elem key="count">2</elem>
+<elem key="median">-120</elem>
+<elem key="mean">-119</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="146825" rttvar="137627" to="697333"/>
+</host>
+<taskbegin task="NSE" time="1675367722"/>
+<taskend task="NSE" time="1675367722"/>
+<taskbegin task="NSE" time="1675367722"/>
+<taskend task="NSE" time="1675367722"/>
+<taskbegin task="NSE" time="1675367722"/>
+<taskend task="NSE" time="1675367722"/>
+<runstats><finished time="1675367722" timestr="Fri Feb  3 01:55:22 2023" summary="Nmap done at Fri Feb  3 01:55:22 2023; 1 IP address (1 host up) scanned in 12.64 seconds" elapsed="12.64" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
